@@ -25,3 +25,15 @@ print(f"Element Month at index 3 : {list_of_months[3]}")
 print("\nList of Months:")
 for month in list_of_months:
     print(month)
+
+#================================================================================
+# Create a list with repeated elements
+# This snippet demonstrates how to create lists with repeated elements in Python.
+# Create a list [2, 2, 2, 2, 2]
+a = [2] * 5
+
+# Create a list [0, 0, 0, 0, 0, 0, 0]
+b = [0] * 7
+
+print(a)
+print(b)
