@@ -72,3 +72,53 @@ print("After pop(1):", a)
 # Deletes the first element (10)
 del a[0]  
 print("After del a[0]:", a)
+
+#=======================================
+fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
+print(fruits.count('apple'))
+
+print(fruits.count('tangerine'))
+
+print(fruits.index('banana'))
+
+print(fruits.index('banana', 4))  # Find next banana starting at position 4
+
+print(fruits.reverse())
+print(fruits)
+
+fruits.append('grape')
+print(fruits)
+
+fruits.sort()
+print(fruits)
+
+print(fruits.pop())
+
+#===========================================
+#(“last-in, first-out”) : STACK
+stack = [3, 4, 5]
+stack.append(6)
+stack.append(7)
+print(stack)
+
+stack.pop()
+
+print(stack)
+
+stack.pop()
+
+stack.pop()
+
+print(stack)
+
+#===========================================
+#(“first-in, first-out”): QUEUE
+from collections import deque
+queue = deque(["Eric", "John", "Michael"])
+queue.append("Terry")           # Terry arrives
+queue.append("Graham")          # Graham arrives
+queue.popleft()                 # The first to arrive now leaves
+
+queue.popleft()                 # The second to arrive now leaves
+
+print(queue)                          # Remaining queue in order of arrival

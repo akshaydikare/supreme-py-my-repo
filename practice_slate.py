@@ -40,10 +40,29 @@ tax = 12.5 / 100
 price = 100.50
 print(round(price + (price * tax), 2))
 
-#===============================
-5 ** 2  # 5 squared = 25
-2 ** 7  # 2 to the power of 7 = 128
 
 #===============================
+print(5 ** 2)  # 5 squared = 25
+print(2 ** 7)  # 2 to the power of 7 = 128
 
+#===============================
+#==================================================>>
+def concat(*args, sep="/"):
+    return sep.join(args)
 
+print(concat("earth", "mars", "venus"))
+print(concat("earth", "mars", "venus", sep="."))
+
+squares = []
+for x in range(10):
+    squares.append(x**2)
+
+print(squares)
+
+#We can calculate the list of squares without any side effects using:
+squares = list(map(lambda x: x**2, range(10)))
+print(squares)
+
+#or, equivalently:
+squares = [x**2 for x in range(10)]
+print(squares)
