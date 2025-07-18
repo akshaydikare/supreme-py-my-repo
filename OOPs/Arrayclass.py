@@ -50,3 +50,6 @@ print(convert_int_to_roman().int_to_Roman(1))
 print(convert_int_to_roman().int_to_Roman(4000))
 
 print(convert_int_to_roman().int_to_Roman(10))
+print(convert_int_to_roman().int_to_Roman(1000))
+
+print(convert_int_to_roman().int_to_Roman(10000))
