@@ -20,5 +20,6 @@ print(dog1.name)     # (Updated instance variable)
 
 # Modify class variable
 Dog.species = "Feline"
+Dog.species = "Bad"
 print(dog1.species)  # (Updated class variable)
 print(dog2.species)
